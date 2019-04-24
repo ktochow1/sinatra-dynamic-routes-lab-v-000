@@ -36,7 +36,7 @@ class App < Sinatra::Base
         answer = (:number1 - :number2).to_s
         when 'multiply'
           answer = (:number1 * :number2).to_s 
-          when 'divide'
+          else 'divide'
             answer = (:number2 / :number1).to_s
   end 
 
