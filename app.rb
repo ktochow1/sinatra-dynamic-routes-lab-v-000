@@ -31,7 +31,13 @@ class App < Sinatra::Base
   
   get '/:operation/:number1/:number2' do 
     when 'add'
-      
+      answer = (:number1 + :number2).to_s 
+      when 'subtract'
+        answer = (:number1 - :number2).to_s
+        when 'multiply'
+          answer = (:number1 * :number2).to_s 
+          when 'divide'
+            answer = (:number2 / :number1).to_s
   end 
 
 end
