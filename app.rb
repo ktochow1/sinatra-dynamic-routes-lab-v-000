@@ -30,6 +30,8 @@ class App < Sinatra::Base
   end 
   
   get '/:operation/:number1/:number2' do 
+   
+    case params[:operation]
     when 'add'
       answer = (:number1 + :number2).to_s 
       when 'subtract'
